@@ -1,0 +1,5 @@
+#mysql setting
+DB_NAME="firstdb"
+DB_USER="root"
+DB_PASS="1234"
+DB_HOST="localhost"
