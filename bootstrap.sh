@@ -12,9 +12,9 @@ function install_mysql_server()
     debconf-set-selections <<< "mysql-server mysql-server/root_password_again password ${DB_PASS}"
 
     apt-get -qq update
-    apt-get install -y mysql-server
+    apt-get install -y mysql-server-5.6
 
-    mysql -u${DB_USER} -p${DB_PASS} -e "CREATE DATABASE ${DB_NAME}"
+    mysql -u${DB_USER} -p${DB_PASS} -e "CREATE DATABASE ${DB_NAME};"
 }
 
 #WebServer
