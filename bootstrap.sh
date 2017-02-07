@@ -55,7 +55,12 @@ function install_additional()
                        imagemagick
 }
 
+function install_adminer()
+{
+    wget -O /var/www/public/adminer.php https://github.com/vrana/adminer/releases/download/v4.2.5/adminer-4.2.5.php
+}
+
 install_mysql_server
 install_webserver
 install_additional
-
+install_adminer
