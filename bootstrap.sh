@@ -40,7 +40,7 @@ function install_webserver()
                        libcurl4-openssl-dev \
                        libsasl2-dev \
                        libpcre3-dev \
-		               php7.0-mcrypt
+		               php7.0-mcrypt php7.0-xml
 
     adduser vagrant www-data
 }
